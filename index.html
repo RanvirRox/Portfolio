@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ranvir Singh (@RanvirRox) | Systems & Mobile Software Developer</title>
+  <meta name="description" content="Portfolio of Ranvir Singh (@RanvirRox) - Systems, Tooling, and Mobile Developer. Creator of EkaKey and GCE Wi-Fi AutoLogin.">
+  <link rel="icon" type="image/png" href="assets/images/avatar.png">
+
+  <!-- Inter Variable Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;510;590;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Ambient background grid and dynamic cursor spotlight -->
+  <div class="bg-grid"></div>
+  <div id="cursor-glow" class="cursor-glow"></div>
+
+  <!-- Header & Navigation -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="#" class="brand">
+        <img src="assets/images/avatar.png" alt="Ranvir Singh" class="brand-avatar">
+        <div class="brand-info">
+          <span class="brand-name">Ranvir Singh</span>
+          <span class="brand-status">
+            <span class="status-dot"></span> Available for projects
+          </span>
+        </div>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#architecture" class="nav-link">Architecture</a></li>
+        <li><a href="#repositories" class="nav-link">Repositories</a></li>
+        <li><a href="#engineering" class="nav-link">Engineering</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <a href="https://github.com/RanvirRox" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          @RanvirRox
+        </a>
+        <a href="mailto:ranvirrox5999@gmail.com" class="btn btn-primary btn-sm">
+          Get in Touch
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero container">
+      <div class="badge-pill">
+        <span class="badge-tag">Crafting Tools</span>
+        <span>Based at GCE Gaya, Bihar, India</span>
+      </div>
+
+      <h1 class="hero-title">
+        Engineering precision software for <span class="gradient-text">desktop, mobile & low-level systems.</span>
+      </h1>
+
+      <p class="hero-desc">
+        I build high-performance utilities, cross-platform applications, and embedded automation tools. Passionate about Flutter UI, Kotlin Android architecture, systems engineering, and real-time efficiency.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">
+          Explore Pinned Projects
+          <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+            <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>
+          </svg>
+        </a>
+        <a href="https://github.com/RanvirRox" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+          <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor">
+            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+          </svg>
+          View GitHub Profile
+        </a>
+      </div>
+
+      <!-- Quick Metrics Strip -->
+      <div class="stats-strip">
+        <div class="stat-item">
+          <div class="stat-num" id="hero-ekakey-stars">111+</div>
+          <div class="stat-label">Stars on EkaKey</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num" id="hero-public-repos">7+</div>
+          <div class="stat-label">Public Repositories</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">Flutter & Kotlin</div>
+          <div class="stat-label">Core Specialization</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">Zero Lag</div>
+          <div class="stat-label">Performance Focus</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pinned Projects Section -->
+    <section id="projects" class="section container">
+      <div class="section-header">
+        <span class="section-label">Selected Works</span>
+        <h2 class="section-title">Pinned GitHub Projects</h2>
+        <p class="section-subtitle">
+          Engineered from scratch to solve real-world system bottlenecks with smooth user experiences.
+        </p>
+      </div>
+
+      <div class="pinned-grid">
+
+        <!-- Project 1: EkaKey -->
+        <article class="project-card">
+          <div class="project-media">
+            <div class="project-media-glow"></div>
+            <img src="assets/images/ekakey-preview.png" alt="EkaKey Windows Autocorrect Logo">
+          </div>
+          <div class="project-body">
+            <div class="project-meta-top">
+              <span class="project-type">Desktop Application</span>
+              <span class="project-stars" id="stars-ekakey">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="#F5A623">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <span class="star-count">111</span> Stars
+              </span>
+            </div>
+
+            <h3 class="project-title">EkaKey: System-Wide Autocorrect</h3>
+            <p class="project-desc">
+              A floating, system-wide typing assistant for Windows. Brings mobile-grade autocorrect, phonetic spelling resolution, dynamic custom trie learning, and visual feedback across any Windows application without lag.
+            </p>
+
+            <div class="tech-tags">
+              <span class="tech-tag">Flutter</span>
+              <span class="tech-tag">Dart</span>
+              <span class="tech-tag">C++ Win32 Hooks</span>
+              <span class="tech-tag">AutoTrie</span>
+              <span class="tech-tag">SQLite</span>
+              <span class="tech-tag">SendInput API</span>
+            </div>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M13.485 1.431a.75.75 0 0 1 .084 1.057l-7.004 8.5a.75.75 0 0 1-1.112.036l-3.5-3.75a.75.75 0 0 1 1.074-1.002L6.002 9.47l6.426-7.8a.75.75 0 0 1 1.057-.084z"/>
+                </svg>
+                <span><strong>Low-Level Listening:</strong> Uses Win32 C++ hooks to observe keystrokes globally without interception lag.</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M13.485 1.431a.75.75 0 0 1 .084 1.057l-7.004 8.5a.75.75 0 0 1-1.112.036l-3.5-3.75a.75.75 0 0 1 1.074-1.002L6.002 9.47l6.426-7.8a.75.75 0 0 1 1.057-.084z"/>
+                </svg>
+                <span><strong>Double Metaphone:</strong> Corrects words by phonetic acoustics with <code>dart_phonetics</code>.</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M13.485 1.431a.75.75 0 0 1 .084 1.057l-7.004 8.5a.75.75 0 0 1-1.112.036l-3.5-3.75a.75.75 0 0 1 1.074-1.002L6.002 9.47l6.426-7.8a.75.75 0 0 1 1.057-.084z"/>
+                </svg>
+                <span><strong>Self-Learning Loop:</strong> Undo a correction once, and it learns your personal abbreviations permanently.</span>
+              </li>
+            </ul>
+
+            <div class="project-footer">
+              <a href="https://github.com/RanvirRox/EkaKey-autocorrect-globally" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                View Source Code
+              </a>
+              <a href="https://github.com/RanvirRox/EkaKey-autocorrect-globally/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                Download Release (v1.0.1)
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: GCE Wi-Fi AutoLogin -->
+        <article class="project-card">
+          <div class="project-media">
+            <div class="project-media-glow"></div>
+            <img src="assets/images/gce-logo.png" alt="GCE Wi-Fi AutoLogin Logo">
+          </div>
+          <div class="project-body">
+            <div class="project-meta-top">
+              <span class="project-type">Android Utility</span>
+              <span class="project-stars" id="stars-gce">
+                <svg width="12" height="12" viewBox="0 0 16 16" fill="#F5A623">
+                  <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.282.95l-3.522 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                </svg>
+                <span class="star-count">3</span> Stars
+              </span>
+            </div>
+
+            <h3 class="project-title">GCE Wi-Fi AutoLogin</h3>
+            <p class="project-desc">
+              Automates captive portal authentication for the hostel Wi-Fi network at Gaya Engineering College (GCE Gaya). Eliminates the repetitive manual sign-in loop through native Android system integration.
+            </p>
+
+            <div class="tech-tags">
+              <span class="tech-tag">Kotlin</span>
+              <span class="tech-tag">Android SDK</span>
+              <span class="tech-tag">Quick Settings Tile</span>
+              <span class="tech-tag">App Widget</span>
+              <span class="tech-tag">ConnectivityManager</span>
+              <span class="tech-tag">OLED Dark UI</span>
+            </div>
+
+            <ul class="feature-list">
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M13.485 1.431a.75.75 0 0 1 .084 1.057l-7.004 8.5a.75.75 0 0 1-1.112.036l-3.5-3.75a.75.75 0 0 1 1.074-1.002L6.002 9.47l6.426-7.8a.75.75 0 0 1 1.057-.084z"/>
+                </svg>
+                <span><strong>Quick Settings & Widget:</strong> 1-tap authentication directly from the Android status shade or 1x1 circular widget.</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M13.485 1.431a.75.75 0 0 1 .084 1.057l-7.004 8.5a.75.75 0 0 1-1.112.036l-3.5-3.75a.75.75 0 0 1 1.074-1.002L6.002 9.47l6.426-7.8a.75.75 0 0 1 1.057-.084z"/>
+                </svg>
+                <span><strong>OS Promotion:</strong> Invokes <code>reportNetworkConnectivity()</code> to clear portal barriers instantly.</span>
+              </li>
+              <li class="feature-item">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M13.485 1.431a.75.75 0 0 1 .084 1.057l-7.004 8.5a.75.75 0 0 1-1.112.036l-3.5-3.75a.75.75 0 0 1 1.074-1.002L6.002 9.47l6.426-7.8a.75.75 0 0 1 1.057-.084z"/>
+                </svg>
+                <span><strong>Domain Probe:</strong> Verifies domain-level reachability via HTTP 204 Google probe verification.</span>
+              </li>
+            </ul>
+
+            <div class="project-footer">
+              <a href="https://github.com/RanvirRox/GCE-Wifi-AutoLogin" target="_blank" rel="noopener noreferrer" class="btn btn-secondary btn-sm">
+                View Source Code
+              </a>
+              <a href="https://github.com/RanvirRox/GCE-Wifi-AutoLogin/releases" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-sm">
+                Download APK (v1.1)
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- Architecture & Workflow Section -->
+    <section id="architecture" class="section container">
+      <div class="section-header">
+        <span class="section-label">Engineering Deep Dive</span>
+        <h2 class="section-title">System Architecture & Workflows</h2>
+        <p class="section-subtitle">
+          Under the hood mechanics of the pinned projects, showcasing low-level Windows APIs and Android network integration.
+        </p>
+      </div>
+
+      <div class="arch-container">
+        <div class="arch-tabs">
+          <button class="arch-tab-btn active" data-target="arch-ekakey">EkaKey Architecture</button>
+          <button class="arch-tab-btn" data-target="arch-gce">GCE AutoLogin Workflow</button>
+        </div>
+
+        <!-- EkaKey Tab Content -->
+        <div id="arch-ekakey" class="arch-content active">
+          <div class="arch-grid">
+            <pre class="arch-diagram">
++-------------------------------------------------+
+| Win32 C++ Low-Level Keystroke Hook              |
++-------------------------------------------------+
+                        |
+                        v
++-------------------------------------------------+
+| Double Metaphone & AutoTrie Dynamic Engine     |
+| (dart_phonetics + local Trie dictionary)        |
++-------------------------------------------------+
+                        |
+                        v
++-------------------------------------------------+
+| Undo / Learning Trigger:                        |
+| Backspace detects edit -> Stores to SQLite DB   |
++-------------------------------------------------+
+                        |
+                        v
++-------------------------------------------------+
+| SendInput API: Keystroke replacement simulation |
++-------------------------------------------------+
+            </pre>
+            <div class="arch-steps">
+              <div class="arch-step-item">
+                <span class="arch-step-num">01</span>
+                <div class="arch-step-info">
+                  <h4>Non-blocking Keystroke Listening</h4>
+                  <p>Attaches a low-level Win32 hook without intercepting or slowing down the Windows message pump.</p>
+                </div>
+              </div>
+              <div class="arch-step-item">
+                <span class="arch-step-num">02</span>
+                <div class="arch-step-info">
+                  <h4>Dual-tier Word Resolution</h4>
+                  <p>Evaluates candidates with exact match prefix Tries alongside sound-alike phonetic metrics.</p>
+                </div>
+              </div>
+              <div class="arch-step-item">
+                <span class="arch-step-num">03</span>
+                <div class="arch-step-info">
+                  <h4>Safe Keystroke Injection</h4>
+                  <p>Simulates hardware backspaces and outputs the corrected word in sub-millisecond cycles via <code>SendInput</code>.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- GCE Wi-Fi Tab Content -->
+        <div id="arch-gce" class="arch-content">
+          <div class="arch-grid">
+            <pre class="arch-diagram">
+[ User Action: App / Tile / Widget ]
+                 |
+                 v
+[ POST Request to 172.16.16.16 Portal Gateway ]
+                 |
+        +--------+--------+
+        |                 |
+  HTTP 200 OK      Failure: Retry (3x)
+        |
+        v
+[ OS Network Promotion via reportNetworkConnectivity() ]
+        |
+        v
+[ Google Domain Probe (generate_204) ]
+        |
+        v
+[ Active Internet Unlocked Across OS ]
+            </pre>
+            <div class="arch-steps">
+              <div class="arch-step-item">
+                <span class="arch-step-num">01</span>
+                <div class="arch-step-info">
+                  <h4>Rapid Portal Handshake</h4>
+                  <p>Dispatches credentials directly to the 24online portal gateway using persistent secure sessions.</p>
+                </div>
+              </div>
+              <div class="arch-step-item">
+                <span class="arch-step-num">02</span>
+                <div class="arch-step-info">
+                  <h4>Captive Portal Bypass</h4>
+                  <p>Directly instructs Android OS to drop the captive-portal restrictions banner upon verification.</p>
+                </div>
+              </div>
+              <div class="arch-step-item">
+                <span class="arch-step-num">03</span>
+                <div class="arch-step-info">
+                  <h4>Probe & Update Verification</h4>
+                  <p>Ensures true internet throughput via domain-level pinging while checking for newer APK builds.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Other Repositories Section -->
+    <section id="repositories" class="section container">
+      <div class="section-header">
+        <span class="section-label">Open Source</span>
+        <h2 class="section-title">Other Noteworthy Repositories</h2>
+        <p class="section-subtitle">
+          Additional tools, embedded systems work, and automation utilities.
+        </p>
+      </div>
+
+      <div class="repos-grid">
+
+        <a href="https://github.com/RanvirRox/EkaCam" target="_blank" rel="noopener noreferrer" class="repo-card">
+          <div class="repo-card-top">
+            <span class="repo-name">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 1 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 0 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 0 1 1-1h8z"/>
+              </svg>
+              EkaCam
+            </span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+            </svg>
+          </div>
+          <p class="repo-desc">
+            Open-source alternative to DroidCam with zero ads, unrestricted resolution, full driver support, and clean streaming latency.
+          </p>
+          <div class="repo-meta">
+            <span class="lang-indicator">
+              <span class="lang-dot dart"></span> Cross-Platform
+            </span>
+          </div>
+        </a>
+
+        <a href="https://github.com/RanvirRox/gtask" target="_blank" rel="noopener noreferrer" class="repo-card">
+          <div class="repo-card-top">
+            <span class="repo-name">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 1 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 0 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 0 1 1-1h8z"/>
+              </svg>
+              gtask
+            </span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+            </svg>
+          </div>
+          <p class="repo-desc">
+            Fast Google Tasks client in a Command Line Interface (CLI) built with C++, enabling terminal-first productivity.
+          </p>
+          <div class="repo-meta">
+            <span class="lang-indicator">
+              <span class="lang-dot cplusplus"></span> C++
+            </span>
+          </div>
+        </a>
+
+        <a href="https://github.com/RanvirRox/ESP32Marauder-Mod" target="_blank" rel="noopener noreferrer" class="repo-card">
+          <div class="repo-card-top">
+            <span class="repo-name">
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                <path fill-rule="evenodd" d="M2 2.5A2.5 2.5 0 0 1 4.5 0h8.75a.75.75 0 0 1 .75.75v12.5a.75.75 0 0 1-.75.75h-2.5a.75.75 0 1 1 0-1.5h1.75v-2h-8a1 1 0 0 0-.714 1.7.75.75 0 0 1-1.072 1.05A2.495 2.495 0 0 1 2 11.5v-9zm10.5-1V9h-8c-.356 0-.694.074-1 .208V2.5a1 1 0 0 1 1-1h8z"/>
+              </svg>
+              ESP32Marauder-Mod
+            </span>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="currentColor">
+              <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+              <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0v-5z"/>
+            </svg>
+          </div>
+          <p class="repo-desc">
+            Custom modifications to the suite of WiFi & Bluetooth offensive/defensive firmware analysis tools for the ESP32.
+          </p>
+          <div class="repo-meta">
+            <span class="lang-indicator">
+              <span class="lang-dot cplusplus"></span> C++ / Embedded
+            </span>
+          </div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- Engineering Philosophy / Skill Domains -->
+    <section id="engineering" class="section container">
+      <div class="section-header">
+        <span class="section-label">Domains & Competencies</span>
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">
+          Core competencies spanning desktop internals, mobile software, and algorithm optimization.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+              <line x1="8" y1="21" x2="16" y2="21"></line>
+              <line x1="12" y1="17" x2="12" y2="21"></line>
+            </svg>
+          </div>
+          <h3 class="skill-title">Systems & Desktop Engineering</h3>
+          <p class="skill-desc">
+            Native platform channels, OS-level hooks, `SendInput` event dispatching, process interop, and minimizing memory and CPU footprints.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-pill">C++</span>
+            <span class="skill-pill">Flutter Desktop</span>
+            <span class="skill-pill">Native Interop</span>
+            <span class="skill-pill">Memory Optimization</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+            </svg>
+          </div>
+          <h3 class="skill-title">Mobile Engineering</h3>
+          <p class="skill-desc">
+            Production-grade Android apps, Quick Settings tiles, home widgets, network state observation, and cross-platform Flutter user interfaces.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-pill">Kotlin</span>
+            <span class="skill-pill">Flutter</span>
+            <span class="skill-pill">Android SDK</span>
+            <span class="skill-pill">Captive Portals</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <div class="skill-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
+              <path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"></path>
+              <path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"></path>
+            </svg>
+          </div>
+          <h3 class="skill-title">Algorithms & Data Engines</h3>
+          <p class="skill-desc">
+            Custom Trie prefix structures for millisecond word prediction, Double Metaphone phonetic matching, and embedded SQLite caching.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-pill">Trie Trees</span>
+            <span class="skill-pill">Phonetics</span>
+            <span class="skill-pill">SQLite</span>
+            <span class="skill-pill">Embedded ESP32</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action Banner -->
+    <section id="contact" class="container">
+      <div class="cta-banner">
+        <h2 class="cta-title">Interested in building something together?</h2>
+        <p class="cta-desc">
+          Feel free to reach out for software development collaborations, tooling ideas, or questions about my open-source projects.
+        </p>
+
+        <div class="contact-action-wrapper">
+          <div class="copy-email-box" id="copy-email-btn" data-email="ranvirrox5999@gmail.com" title="Click to copy email">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383-4.708 2.825L15 11.105V5.383zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741zM1 11.105l4.708-2.897L1 5.383v5.722z"/>
+            </svg>
+            <span>ranvirrox5999@gmail.com</span>
+            <svg width="12" height="12" viewBox="0 0 16 16" fill="currentColor" style="opacity: 0.6;">
+              <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z"/>
+              <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z"/>
+            </svg>
+          </div>
+
+          <a href="mailto:ranvirrox5999@gmail.com" class="btn btn-primary">
+            Send Email
+          </a>
+
+          <a href="https://github.com/RanvirRox" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+            GitHub Profile
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Site Footer -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div class="footer-credits">
+        <span>Designed strictly following the Linear product aesthetic in <a href="DESIGN.md">DESIGN.md</a>. Built for <strong>Ranvir Singh</strong>.</span>
+      </div>
+      <div class="footer-links">
+        <a href="https://github.com/RanvirRox" target="_blank" rel="noopener noreferrer" class="footer-link">GitHub</a>
+        <a href="https://github.com/RanvirRox/EkaKey-autocorrect-globally" target="_blank" rel="noopener noreferrer" class="footer-link">EkaKey</a>
+        <a href="https://github.com/RanvirRox/GCE-Wifi-AutoLogin" target="_blank" rel="noopener noreferrer" class="footer-link">GCE AutoLogin</a>
+        <a href="#top" class="footer-link">Back to top ↑</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Toast Element -->
+  <div id="toast" class="toast-msg">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="#27A644">
+      <path d="M13.485 1.431a.75.75 0 0 1 .084 1.057l-7.004 8.5a.75.75 0 0 1-1.112.036l-3.5-3.75a.75.75 0 0 1 1.074-1.002L6.002 9.47l6.426-7.8a.75.75 0 0 1 1.057-.084z"/>
+    </svg>
+    <span id="toast-text">Notification</span>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
